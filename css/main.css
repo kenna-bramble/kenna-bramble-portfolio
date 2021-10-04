@@ -89,11 +89,43 @@ textarea {
 
 /*-------------------- Global Styles ------------------*/
 html {
-  background-color: #e0b3b5;
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  background-color: #d8b2b3;
+  color: #222;
 }
 
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h4 {
+
+}
+p {
+  text-align: center;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
 body {
 
+}
+address {
+     font-style: normal;
+   }
+
+.highlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #a95f54 60%);
 }
 
 .content-wrapper {
@@ -124,7 +156,7 @@ header .content-wrapper {
 }
 
 header nav {
-  width: 60%;
+  width: 70%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -137,8 +169,13 @@ header nav ul {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  text-transform: uppercase;
   padding: 0;
   margin: 0;
+  font-size: 14px;
+}
+header nav ul li {
+
 }
 
 header h1 {
@@ -153,7 +190,23 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url('../img/main-bkg.jpg') bottom no-repeat;
+  background-size: cover;
 }
+
+.hero-area h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  margin: 0;
+  line-height: 1;
+}
+
+.hero-area h4 {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
 .hero-area .content-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -161,7 +214,9 @@ header h1 {
   flex-flow: row wrap;
 }
 
+
 /*- Services Section Styles -*/
+
 .services {
   display: flex;
   justify-content: center;
@@ -186,6 +241,17 @@ header h1 {
 .services figure img {
   width: 100%;
 }
+
+.services h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+}
+
+.services .more i {
+  font-size: 14px;
+}
 /*- Toolkit Section Styles -*/
 
 .toolkit {
@@ -199,6 +265,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 25px 0;
 }
 
 .toolkit-items {
@@ -206,6 +273,7 @@ header h1 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin-top: 25px;
 }
 
 .toolkit article {
@@ -266,14 +334,22 @@ footer .footer-content {
 }
 
 footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
+  width: 75%;
+  margin: 25px 0;
 }
 
 footer .contact {
   margin-bottom: 50px;
 }
 
+footer address p {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+footer address a {
+  font-size: 20px;
+}
 footer .social-icons p {
   display: flex;
   justify-content: center;
