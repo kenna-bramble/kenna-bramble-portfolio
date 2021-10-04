@@ -89,7 +89,7 @@ textarea {
 
 /*-------------------- Global Styles ------------------*/
 html {
-
+  background-color: #e0b3b5;
 }
 
 body {
@@ -97,7 +97,7 @@ body {
 }
 
 .content-wrapper {
-  margin: 50px 0;
+  margin: 25px 0;
   width: 90%;
 }
 /*------------------ Base Header-Footer Styles ------------------*/
@@ -111,24 +111,22 @@ footer {
 
 /*- Header Styles -*/
 
-header .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+header {
+  height: 50px;
 }
 
-.header-divider {
-  width: 100%;
-  margin: 10px 0;
-  height: 3px;
-  background: #E26D5C;
+header .content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
 }
 
 header nav {
   width: 60%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-flow: row wrap;
 }
@@ -140,7 +138,7 @@ header nav ul {
   align-items: center;
   flex-flow: row wrap;
   padding: 0;
-  margin: 10px 0;
+  margin: 0;
 }
 
 header h1 {
@@ -151,15 +149,176 @@ header h1 {
 /*------------------ Mobile Styles - Homepage ------------------*/
 
 /*- Hero Area Section Styles -*/
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-area .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
+/*- Services Section Styles -*/
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a95f54;
+}
 
-/*- Projects Section Styles -*/
+.services .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-/*- About Section Styles -*/
+.services figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.services figure img {
+  width: 100%;
+}
+/*- Toolkit Section Styles -*/
+
+.toolkit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toolkit .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.toolkit-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.toolkit article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 49%;
+}
+
+.toolkit article p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.toolkit .fontawesome-icon i {
+  font-size: 75px;
+  color: #000000;
+}
+.fontawesome-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.toolkit article img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 75px;
+  height: 75px;
+}
+
+.toolkit-item-description {
+  margin: 20px 0 30px 0;
+}
+
 
 /*- Footer Styles -*/
 
+footer {
+  text-align: center;
+  flex-direction: column;
+  background: url('../img/main-bkg.jpg') center no-repeat;
+  background-size: cover;
+}
 
+footer .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+footer .social {
+  width: 100%;
+}
+
+footer .social-icons p i {
+  color: #000;
+  font-size: 40px;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+
+
+
+/*- Projects Section Styles -*/
+/*
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+/*- About Section Styles -*/
+/*
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
 
 
 
